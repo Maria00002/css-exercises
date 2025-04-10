@@ -12,6 +12,39 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* Below are added code */
+  display: flex;
+  justify-content: flex-start;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 8px;
+  gap:8px;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items:center;
+  flex-direction:row;
+  padding: 16px;
+}
+
+div .links {
+  flex-direction:row;  
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  display: flex;
+  gap: 8px;
+}
+
+.right {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  padding: 16px;
 }
 
 .profile-image {
