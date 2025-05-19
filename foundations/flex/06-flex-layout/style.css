@@ -5,6 +5,69 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* The header is at the top of the page, the footer is at the bottom, and they stay in place if you resize your screen*/
+}
+
+/* .header {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  gap: 5px; 
+} */
+
+.header,
+.footer {
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+ul {
+  list-style-type: none; /*CSS remove list bullets*/
+  display: flex;
+  margin : 0;
+  padding: 0;
+  gap: 16px;
+
+}
+
+/* No underline */
+/* a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:active {text-decoration: none;} */
+
+/* .left-links {
+  display: flex;
+  gap:8px;
+
+}
+
+.right-links {
+  display: flex;
+  gap: 8px;
+
+} */
+
+a {
+  color: grey;
+  text-decoration:none;
 }
 
 img {
@@ -16,6 +79,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 14px;
+  margin-top:12px;
 }
 
 input {
